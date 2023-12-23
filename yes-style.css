@@ -6,18 +6,18 @@ body {
     background-color: #000000;
 }
 
-/* Position the "No" button absolutely within body */
+
 #noButton {
     position: absolute;
     margin-left: 150px;
     transition: 0.5s;
-    /* Smooth movement */
+   
 }
 
 #yesButton {
     position: absolute;
     margin-right: 150px;
-    /* Smooth movement */
+   
 }
 
 .header_text {
@@ -47,7 +47,7 @@ body {
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
-    /* optional: adds some space between the buttons */
+ 
 }
 
 .btn {
