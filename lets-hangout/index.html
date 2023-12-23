@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('yesButton').addEventListener('click', nextPage);
+            document.getElementById('noButton').addEventListener('click', moveButton);
+            document.getElementById('noButton').addEventListener('mouseover', moveButton);
+        });
+
+        function nextPage() {
+            window.location.href = "yes.html";
+        }
+
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+            document.getElementById('noButton').style.left = `${x}px`;
+            document.getElementById('noButton').style.top = `${y}px`;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Do you wanna go out with me?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="assets/cute.gif" alt="Cute GIF">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton">Yes</button>
+            <button class="btn" id="noButton">No</button>
+        </div>
+    </div>
+</body>
+</html>
